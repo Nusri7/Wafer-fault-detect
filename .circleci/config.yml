@@ -3,7 +3,7 @@ orbs:
   heroku: circleci/heroku@1.0.1
 jobs:
   build-and-test:
-    executor: heroku/default
+    executor: aws/default
     docker:
       - image: circleci/python:3.6.2-stretch-browsers
         auth:
